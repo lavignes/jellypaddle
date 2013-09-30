@@ -1,0 +1,27 @@
+Jelly Paddle
+
+Compile using the makefile. Using the 'make play' target will run
+with vsync forced off. Run 'jellypaddle' to start the game.
+
+Controls:
+  Left arrow  => float left
+  Right arrow => float right
+  Up arrow    => float up
+  Down arrow  => float down
+
+Description:
+  Break all the bricks to see your score for that round.
+  Every time line of bricks is cleared the game gets harder.
+  There is no penalty for losing the ball. Sometimes you want
+  it to go offscreen. If the ball leaves the playfield, slam
+  the paddle forcefully against the last wall the ball touched.
+  That *should* reset the ball.
+
+Why its cool:
+  You'll know. It's also evidently implemented as a simple game engine,
+  everything that makes it breakout is in brkout.c
+
+Challenges:
+  None really, it seems complex, but the math is actually super simple.
+  I wrote most of it in one night. So forgive the glitchiness.
+
